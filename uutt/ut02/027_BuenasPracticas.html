@@ -682,6 +682,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2.7. Buenas prácticas HTML semántico
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="027_BuenasPracticas.html" class="md-nav__link md-nav__link--active">
         
   
@@ -691,6 +702,79 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#uso-adecuado-de-las-etiquetas-semanticas-en-lugar-de-div-genericos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso adecuado de las etiquetas semánticas en lugar de div genéricos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jerarquia-y-estructura-clara-con-etiquetas-de-encabezado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jerarquía y estructura clara con etiquetas de encabezado
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evitar-anidacion-excesiva-de-elementos-innecesarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evitar anidación excesiva de elementos innecesarios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-correcto-de-aside-para-contenido-relacionado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso correcto de &lt;aside&gt; para contenido relacionado
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-adecuado-de-los-pies-de-pagina" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso adecuado de los pies de página
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -741,6 +825,150 @@
 
 
 <h1 id="buenas-practicas-en-html-semantico">Buenas prácticas en HTML semántico<a class="headerlink" href="#buenas-practicas-en-html-semantico" title="Permanent link">&para;</a></h1>
+<p>El uso correcto de HTML semántico no solo hace que el código sea más accesible y mantenible, sino que también ayuda a los motores de búsqueda a entender mejor el contenido de un sitio web. Aquí te muestro algunas buenas prácticas al usar etiquetas semánticas, acompañadas de malas prácticas para comparar la diferencia en la calidad del código.</p>
+<h2 id="uso-adecuado-de-las-etiquetas-semanticas-en-lugar-de-div-genericos">Uso adecuado de las etiquetas semánticas en lugar de div genéricos<a class="headerlink" href="#uso-adecuado-de-las-etiquetas-semanticas-en-lugar-de-div-genericos" title="Permanent link">&para;</a></h2>
+<p>Utiliza las etiquetas semánticas correctas en lugar de depender únicamente de <code>&lt;div&gt;</code> para estructurar tu página.</p>
+<div class="language-html highlight"><span class="filename">Ejemplo (bueno)</span><pre><span></span><code><span id="__span-0-1"><span class="linenos" data-linenos=" 1 "></span><span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+</span><span id="__span-0-2"><span class="linenos" data-linenos=" 2 "></span>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Mi Blog<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><span class="linenos" data-linenos=" 3 "></span>    <span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><span class="linenos" data-linenos=" 4 "></span>        <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-5"><span class="linenos" data-linenos=" 5 "></span>            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;index.html&quot;</span><span class="p">&gt;</span>Inicio<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-6"><span class="linenos" data-linenos=" 6 "></span>            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;about.html&quot;</span><span class="p">&gt;</span>Sobre mí<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-7"><span class="linenos" data-linenos=" 7 "></span>        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-8"><span class="linenos" data-linenos=" 8 "></span>    <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span><span id="__span-0-9"><span class="linenos" data-linenos=" 9 "></span><span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</span><span id="__span-0-10"><span class="linenos" data-linenos="10 "></span>
+</span><span id="__span-0-11"><span class="linenos" data-linenos="11 "></span><span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span>
+</span><span id="__span-0-12"><span class="linenos" data-linenos="12 "></span>    <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-0-13"><span class="linenos" data-linenos="13 "></span>        <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Título del artículo<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-0-14"><span class="linenos" data-linenos="14 "></span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este es el contenido de un artículo interesante...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-0-15"><span class="linenos" data-linenos="15 "></span>    <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-0-16"><span class="linenos" data-linenos="16 "></span><span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+</span><span id="__span-0-17"><span class="linenos" data-linenos="17 "></span>
+</span><span id="__span-0-18"><span class="linenos" data-linenos="18 "></span><span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span><span id="__span-0-19"><span class="linenos" data-linenos="19 "></span>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;copy;</span> 2024 Mi Blog<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-0-20"><span class="linenos" data-linenos="20 "></span><span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Aquí se utilizan etiquetas como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code> y <code>&lt;footer&gt;</code>, que tienen un propósito específico y hacen que el código sea mucho más claro y semánticamente correcto.</p>
+<div class="language-html highlight"><span class="filename">Ejemplo (malo)</span><pre><span></span><code><span id="__span-1-1"><span class="linenos" data-linenos=" 1 "></span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-1-2"><span class="linenos" data-linenos=" 2 "></span>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Mi Blog<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-1-3"><span class="linenos" data-linenos=" 3 "></span>    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-1-4"><span class="linenos" data-linenos=" 4 "></span>        <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-1-5"><span class="linenos" data-linenos=" 5 "></span>            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;index.html&quot;</span><span class="p">&gt;</span>Inicio<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-1-6"><span class="linenos" data-linenos=" 6 "></span>            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;about.html&quot;</span><span class="p">&gt;</span>Sobre mí<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-1-7"><span class="linenos" data-linenos=" 7 "></span>        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-1-8"><span class="linenos" data-linenos=" 8 "></span>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-1-9"><span class="linenos" data-linenos=" 9 "></span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-1-10"><span class="linenos" data-linenos="10 "></span>
+</span><span id="__span-1-11"><span class="linenos" data-linenos="11 "></span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-1-12"><span class="linenos" data-linenos="12 "></span>    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-1-13"><span class="linenos" data-linenos="13 "></span>        <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Título del artículo<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-1-14"><span class="linenos" data-linenos="14 "></span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este es el contenido de un artículo interesante...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-1-15"><span class="linenos" data-linenos="15 "></span>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-1-16"><span class="linenos" data-linenos="16 "></span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-1-17"><span class="linenos" data-linenos="17 "></span>
+</span><span id="__span-1-18"><span class="linenos" data-linenos="18 "></span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-1-19"><span class="linenos" data-linenos="19 "></span>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;copy;</span> 2024 Mi Blog<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-1-20"><span class="linenos" data-linenos="20 "></span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>En este caso, se usa <code>&lt;div&gt;</code> para todo, lo que dificulta la comprensión del código. Los navegadores y lectores de pantalla no pueden entender fácilmente la estructura de la página, lo que afecta negativamente la accesibilidad y el SEO.</p>
+<h2 id="jerarquia-y-estructura-clara-con-etiquetas-de-encabezado">Jerarquía y estructura clara con etiquetas de encabezado<a class="headerlink" href="#jerarquia-y-estructura-clara-con-etiquetas-de-encabezado" title="Permanent link">&para;</a></h2>
+<p>Usa las etiquetas de encabezado <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, etc., de forma correcta para crear una jerarquía clara del contenido.</p>
+<div class="language-html highlight"><span class="filename">Ejemplo (bueno)</span><pre><span></span><code><span id="__span-2-1"><span class="linenos" data-linenos=" 1 "></span><span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-2-2"><span class="linenos" data-linenos=" 2 "></span>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Título del artículo<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-2-3"><span class="linenos" data-linenos=" 3 "></span>    <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+</span><span id="__span-2-4"><span class="linenos" data-linenos=" 4 "></span>        <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Subtítulo de la sección 1<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-2-5"><span class="linenos" data-linenos=" 5 "></span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Contenido de la sección 1...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-2-6"><span class="linenos" data-linenos=" 6 "></span>    <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</span><span id="__span-2-7"><span class="linenos" data-linenos=" 7 "></span>    <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+</span><span id="__span-2-8"><span class="linenos" data-linenos=" 8 "></span>        <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Subtítulo de la sección 2<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-2-9"><span class="linenos" data-linenos=" 9 "></span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Contenido de la sección 2...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-2-10"><span class="linenos" data-linenos="10 "></span>    <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</span><span id="__span-2-11"><span class="linenos" data-linenos="11 "></span><span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Aquí, el uso correcto de <code>&lt;h1&gt;</code> para el título principal y <code>&lt;h2&gt;</code> para las subsecciones crea una jerarquía clara tanto para los usuarios como para los motores de búsqueda.</p>
+<div class="language-html highlight"><span class="filename">Ejemplo (malo)</span><pre><span></span><code><span id="__span-3-1"><span class="linenos" data-linenos=" 1 "></span><span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-3-2"><span class="linenos" data-linenos=" 2 "></span>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Título del artículo<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-3-3"><span class="linenos" data-linenos=" 3 "></span>    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-4"><span class="linenos" data-linenos=" 4 "></span>        <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Subtítulo de la sección 1<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-3-5"><span class="linenos" data-linenos=" 5 "></span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Contenido de la sección 1...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-3-6"><span class="linenos" data-linenos=" 6 "></span>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-7"><span class="linenos" data-linenos=" 7 "></span>    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-8"><span class="linenos" data-linenos=" 8 "></span>        <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Subtítulo de la sección 2<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-3-9"><span class="linenos" data-linenos=" 9 "></span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Contenido de la sección 2...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-3-10"><span class="linenos" data-linenos="10 "></span>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-3-11"><span class="linenos" data-linenos="11 "></span><span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Aquí, se usa <code>&lt;h3&gt;</code> en lugar de <code>&lt;h2&gt;</code> para las subsecciones, rompiendo la jerarquía lógica. Esto confunde a los motores de búsqueda y afecta la accesibilidad, ya que los lectores de pantalla no pueden interpretar correctamente la estructura del contenido.</p>
+<h2 id="evitar-anidacion-excesiva-de-elementos-innecesarios">Evitar anidación excesiva de elementos innecesarios<a class="headerlink" href="#evitar-anidacion-excesiva-de-elementos-innecesarios" title="Permanent link">&para;</a></h2>
+<p>Mantén el código limpio evitando una anidación innecesaria de elementos HTML, especialmente con etiquetas semánticas.</p>
+<div class="language-html highlight"><span class="filename">Ejemplo (bueno)</span><pre><span></span><code><span id="__span-4-1"><span class="linenos" data-linenos="1 "></span><span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-4-2"><span class="linenos" data-linenos="2 "></span>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Título del artículo<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-4-3"><span class="linenos" data-linenos="3 "></span>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este es el contenido de un artículo interesante...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-4-4"><span class="linenos" data-linenos="4 "></span><span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Este ejemplo es claro y conciso, con solo las etiquetas necesarias para estructurar el contenido.</p>
+<div class="language-html highlight"><span class="filename">Ejemplo (malo)</span><pre><span></span><code><span id="__span-5-1"><span class="linenos" data-linenos="1 "></span><span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-5-2"><span class="linenos" data-linenos="2 "></span>    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-5-3"><span class="linenos" data-linenos="3 "></span>        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Título del artículo<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-5-4"><span class="linenos" data-linenos="4 "></span>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-5-5"><span class="linenos" data-linenos="5 "></span>    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-5-6"><span class="linenos" data-linenos="6 "></span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este es el contenido de un artículo interesante...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-5-7"><span class="linenos" data-linenos="7 "></span>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-5-8"><span class="linenos" data-linenos="8 "></span><span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Aquí, los <code>&lt;div&gt;</code> son innecesarios y no aportan ningún valor semántico. Solo agregan complejidad al código sin ningún beneficio real.</p>
+<h2 id="uso-correcto-de-aside-para-contenido-relacionado">Uso correcto de <code>&lt;aside&gt;</code> para contenido relacionado<a class="headerlink" href="#uso-correcto-de-aside-para-contenido-relacionado" title="Permanent link">&para;</a></h2>
+<p>Utiliza <code>&lt;aside&gt;</code> para contenido relacionado o complementario que no es parte del contenido principal pero puede interesar al lector.</p>
+<div class="language-html highlight"><span class="filename">Ejemplo (bueno)</span><pre><span></span><code><span id="__span-6-1"><span class="linenos" data-linenos=" 1 "></span><span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-6-2"><span class="linenos" data-linenos=" 2 "></span>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Título del artículo<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-6-3"><span class="linenos" data-linenos=" 3 "></span>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Contenido del artículo principal...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-6-4"><span class="linenos" data-linenos=" 4 "></span><span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-6-5"><span class="linenos" data-linenos=" 5 "></span>
+</span><span id="__span-6-6"><span class="linenos" data-linenos=" 6 "></span><span class="p">&lt;</span><span class="nt">aside</span><span class="p">&gt;</span>
+</span><span id="__span-6-7"><span class="linenos" data-linenos=" 7 "></span>    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Artículos relacionados<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-6-8"><span class="linenos" data-linenos=" 8 "></span>    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-6-9"><span class="linenos" data-linenos=" 9 "></span>        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Artículo 1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-6-10"><span class="linenos" data-linenos="10 "></span>        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Artículo 2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-6-11"><span class="linenos" data-linenos="11 "></span>    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-6-12"><span class="linenos" data-linenos="12 "></span><span class="p">&lt;/</span><span class="nt">aside</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Aquí, el <code>&lt;aside&gt;</code> está bien utilizado para mostrar artículos relacionados, y está claramente separado del contenido principal.</p>
+<div class="language-html highlight"><span class="filename">Ejemplo (malo)</span><pre><span></span><code><span id="__span-7-1"><span class="linenos" data-linenos=" 1 "></span><span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-7-2"><span class="linenos" data-linenos=" 2 "></span>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Título del artículo<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-7-3"><span class="linenos" data-linenos=" 3 "></span>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Contenido del artículo principal...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-7-4"><span class="linenos" data-linenos=" 4 "></span>    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-7-5"><span class="linenos" data-linenos=" 5 "></span>        <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Artículos relacionados<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-7-6"><span class="linenos" data-linenos=" 6 "></span>        <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-7-7"><span class="linenos" data-linenos=" 7 "></span>            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Artículo 1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-7-8"><span class="linenos" data-linenos=" 8 "></span>            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Artículo 2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-7-9"><span class="linenos" data-linenos=" 9 "></span>        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-7-10"><span class="linenos" data-linenos="10 "></span>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-7-11"><span class="linenos" data-linenos="11 "></span><span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>En este ejemplo, se coloca el contenido relacionado dentro del mismo <code>&lt;article&gt;</code>, lo que no es correcto, ya que los artículos relacionados no forman parte del contenido principal del artículo. Además, el uso de <code>&lt;div&gt;</code> en lugar de <code>&lt;aside&gt;</code> elimina el contexto semántico adecuado.</p>
+<h2 id="uso-adecuado-de-los-pies-de-pagina">Uso adecuado de los pies de página<a class="headerlink" href="#uso-adecuado-de-los-pies-de-pagina" title="Permanent link">&para;</a></h2>
+<p>Usa <code>&lt;footer&gt;</code> para agrupar información como derechos de autor, políticas de privacidad o enlaces adicionales que aparecen al final de una página o sección.</p>
+<div class="language-html highlight"><span class="filename">Ejemplo (bueno)</span><pre><span></span><code><span id="__span-8-1"><span class="linenos" data-linenos="1 "></span><span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-8-2"><span class="linenos" data-linenos="2 "></span>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Título del artículo<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-8-3"><span class="linenos" data-linenos="3 "></span>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Contenido del artículo...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-8-4"><span class="linenos" data-linenos="4 "></span>    <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span><span id="__span-8-5"><span class="linenos" data-linenos="5 "></span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Publicado el 12 de septiembre de 2024<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-8-6"><span class="linenos" data-linenos="6 "></span>    <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span><span id="__span-8-7"><span class="linenos" data-linenos="7 "></span><span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Aquí, el <code>&lt;footer&gt;</code> dentro del <code>&lt;article&gt;</code> proporciona contexto adicional relevante para el contenido, como la fecha de publicación del artículo.</p>
+<div class="language-html highlight"><span class="filename">Ejemplo (malo)</span><pre><span></span><code><span id="__span-9-1"><span class="linenos" data-linenos="1 "></span><span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span><span id="__span-9-2"><span class="linenos" data-linenos="2 "></span>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Título del artículo<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-9-3"><span class="linenos" data-linenos="3 "></span>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Contenido del artículo...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-9-4"><span class="linenos" data-linenos="4 "></span>    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-9-5"><span class="linenos" data-linenos="5 "></span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Publicado el 12 de septiembre de 2024<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-9-6"><span class="linenos" data-linenos="6 "></span>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span id="__span-9-7"><span class="linenos" data-linenos="7 "></span><span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>En este caso, se utiliza un <code>&lt;div&gt;</code> para la información del pie de página, lo cual es innecesario y no semántico. El uso de <code>&lt;footer&gt;</code> sería más apropiado, ya que indica claramente que es información de cierre.</p>
+<h2 id="conclusion">Conclusión<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
+<p>Las buenas prácticas en HTML semántico no solo mejoran la accesibilidad, sino que también hacen que el código sea más fácil de mantener, comprender y optimizar para los motores de búsqueda. Al seguir estas pautas, podemos crear sitios web más eficientes y accesibles para todos los usuarios, mientras evitamos el uso excesivo de etiquetas genéricas como <code>&lt;div&gt;</code>.</p>
 <!-- Resultados de Aprendizaje & Criterios de Evaluación -->
 <!-- Instrumentos de Evaluación -->
 <!-- Instrumentos de Calificación -->

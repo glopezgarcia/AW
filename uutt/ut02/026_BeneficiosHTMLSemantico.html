@@ -661,6 +661,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2.6. Beneficios del HTML semántico
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="026_BeneficiosHTMLSemantico.html" class="md-nav__link md-nav__link--active">
         
   
@@ -670,6 +681,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accesibilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accesibilidad
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mejora-en-seo-optimizacion-para-motores-de-busqueda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mejora en SEO (Optimización para Motores de Búsqueda)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mantenimiento-del-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mantenimiento del Código
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -741,6 +798,61 @@
 
 
 <h1 id="beneficios-del-html-semantico">Beneficios del HTML semántico<a class="headerlink" href="#beneficios-del-html-semantico" title="Permanent link">&para;</a></h1>
+<p>El uso de HTML semántico es fundamental para mejorar tanto la calidad del código como la experiencia de usuario. A continuación, exploramos los beneficios clave que trae consigo la adopción de etiquetas semánticas en el desarrollo web.</p>
+<h2 id="accesibilidad">Accesibilidad<a class="headerlink" href="#accesibilidad" title="Permanent link">&para;</a></h2>
+<p>El HTML semántico juega un papel crucial en la accesibilidad de un sitio web, ya que ayuda a los usuarios con discapacidades a interactuar mejor con el contenido.</p>
+<ul>
+<li>
+<p>Lectores de pantalla: Las etiquetas semánticas ayudan a los lectores de pantalla a interpretar el contenido correctamente. Por ejemplo, al utilizar etiquetas como <code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code> y <code>&lt;footer&gt;</code>, los lectores de pantalla pueden proporcionar un mapa claro del sitio a los usuarios que no pueden ver la página. Esto les permite saltar entre secciones y navegar de forma más eficiente.</p>
+</li>
+<li>
+<p>Teclas de navegación: Las personas con discapacidades motoras pueden navegar por el sitio web utilizando solo el teclado. Las etiquetas semánticas permiten que se implementen correctamente puntos de referencia y atajos, lo que facilita moverse por el contenido sin necesidad de usar un ratón.</p>
+</li>
+<li>
+<p>Mejora en la jerarquía del contenido: Las etiquetas semánticas como <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code> y <code>&lt;aside&gt;</code> proporcionan una estructura clara y bien organizada que permite a los usuarios identificar rápidamente el propósito de cada parte de la página.</p>
+</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Si utilizas un <code>&lt;header&gt;</code> para definir la parte superior de una página, un lector de pantalla puede comunicarle al usuario que está en la "cabecera" del sitio, lo que no es posible con un simple <code>&lt;div&gt;</code>.</p>
+</div>
+<h2 id="mejora-en-seo-optimizacion-para-motores-de-busqueda">Mejora en SEO (Optimización para Motores de Búsqueda)<a class="headerlink" href="#mejora-en-seo-optimizacion-para-motores-de-busqueda" title="Permanent link">&para;</a></h2>
+<p>El uso de HTML semántico también es beneficioso para el SEO, mejorando la visibilidad de un sitio en los motores de búsqueda como Google o Bing.</p>
+<ul>
+<li>
+<p>Indexación más eficiente: Las etiquetas semánticas permiten que los motores de búsqueda comprendan mejor el contenido de la página. Por ejemplo, un <code>&lt;article&gt;</code> le indica al motor de búsqueda que el contenido dentro de esa etiqueta es un artículo o publicación independiente, lo que facilita su indexación. Del mismo modo, <code>&lt;header&gt;</code> y <code>&lt;footer&gt;</code> le brindan a los motores de búsqueda información sobre las áreas clave del sitio.</p>
+</li>
+<li>
+<p>Mejora en la relevancia del contenido: Al usar etiquetas adecuadas como <code>&lt;nav&gt;</code> para la navegación o <code>&lt;section&gt;</code> para las diferentes áreas del contenido, los motores de búsqueda pueden entender cómo se organiza la información. Esto puede traducirse en un mejor posicionamiento, ya que las páginas que están bien estructuradas son vistas como más relevantes para las consultas de búsqueda.</p>
+</li>
+<li>
+<p>Rich snippets (fragmentos enriquecidos): El uso adecuado de etiquetas semánticas también puede ayudar a que se muestren "fragmentos enriquecidos" en los resultados de búsqueda. Esto sucede cuando los motores de búsqueda extraen información importante del contenido (como el título de un artículo, una imagen o el autor) y la presentan directamente en los resultados, haciendo que la página sea más atractiva y relevante para los usuarios.</p>
+</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Un sitio web que utiliza un <code>&lt;article&gt;</code> correctamente etiquetado puede aparecer en los resultados de búsqueda con un título claro, un extracto y el autor visible, lo que aumenta la probabilidad de que los usuarios hagan clic en ese resultado.</p>
+</div>
+<h2 id="mantenimiento-del-codigo">Mantenimiento del Código<a class="headerlink" href="#mantenimiento-del-codigo" title="Permanent link">&para;</a></h2>
+<p>El uso de etiquetas semánticas no solo facilita la lectura y el mantenimiento del código por parte de los desarrolladores, sino que también reduce la posibilidad de cometer errores y mejora la escalabilidad del proyecto.</p>
+<ul>
+<li>
+<p>Código más claro y legible: Las etiquetas semánticas hacen que el código sea más fácil de entender tanto para el desarrollador que lo escribe como para otros que puedan trabajar en él en el futuro. Si un desarrollador encuentra un <code>&lt;nav&gt;</code> o un <code>&lt;main&gt;</code>, inmediatamente sabe que esa parte del código representa la navegación o el contenido principal de la página, respectivamente. Esto no es tan evidente si el sitio está compuesto únicamente por <code>&lt;div&gt;</code> o <code>&lt;span&gt;</code>.</p>
+</li>
+<li>
+<p>Facilidad en la colaboración: En equipos de desarrollo, el uso de etiquetas semánticas facilita la colaboración, ya que todos los desarrolladores pueden comprender rápidamente la estructura del sitio sin necesidad de revisar cada línea de código detalladamente. Esto ahorra tiempo y reduce el riesgo de malentendidos.</p>
+</li>
+<li>
+<p>Escalabilidad del proyecto: A medida que los sitios web crecen, la estructura semántica bien definida permite que se agreguen nuevas secciones o funciones sin causar un caos en el código. Por ejemplo, un sitio web con secciones bien definidas mediante <code>&lt;section&gt;</code> o <code>&lt;article&gt;</code> puede ampliarse fácilmente sin reestructurar todo el sitio.</p>
+</li>
+<li>
+<p>Depuración más eficiente: Cuando el código está bien estructurado, encontrar y corregir errores se vuelve más sencillo. Si hay un problema en la barra de navegación, el desarrollador sabe que debe buscar en el área <code>&lt;nav&gt;</code>, lo que agiliza el proceso de solución de problemas.</p>
+</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>Un sitio web que organiza correctamente su contenido con etiquetas como <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, y <code>&lt;aside&gt;</code> será mucho más fácil de actualizar y mantener que uno donde todo está dentro de múltiples <code>&lt;div&gt;</code> sin un propósito claro.</p>
+</div>
 <!-- Resultados de Aprendizaje & Criterios de Evaluación -->
 <!-- Instrumentos de Evaluación -->
 <!-- Instrumentos de Calificación -->
