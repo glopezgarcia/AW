@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://github.com/glopezgarcia/AW/uutt/ut03/033_ModeloCajas.html">
+        <link rel="canonical" href="https://github.com/glopezgarcia/AW/uutt/ut03/035_Flexbox.html">
       
       
-        <link rel="prev" href="032_Uso.html">
+        <link rel="prev" href="034_ModeloCajas.html">
       
       
-        <link rel="next" href="034_Flexbox.html">
+        <link rel="next" href="036_Propiedades.html">
       
       
       <link rel="icon" href="../../img/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>3.3. Modelo de cajas - Aplicaciones Web</title>
+        <title>3.5. Flexbox - Aplicaciones Web</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modelo-de-cajas" class="md-skip">
+        <a href="#flexbox" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              3.3. Modelo de cajas
+              3.5. Flexbox
             
           </span>
         </div>
@@ -734,6 +734,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -829,6 +837,48 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="033_Cascada.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3. Cascada
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="034_ModeloCajas.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.4. Modelo de cajas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -845,18 +895,18 @@
           
   
   <span class="md-ellipsis">
-    3.3. Modelo de cajas
+    3.5. Flexbox
   </span>
   
 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="033_ModeloCajas.html" class="md-nav__link md-nav__link--active">
+      <a href="035_Flexbox.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    3.3. Modelo de cajas
+    3.5. Flexbox
   </span>
   
 
@@ -878,9 +928,156 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#zonas-de-un-elemento" class="md-nav__link">
+  <a href="#por-que-usamos-flexbox" class="md-nav__link">
     <span class="md-ellipsis">
-      Zonas de un elemento
+      ¿Por qué usamos flexbox?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-usa-flexbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Cómo se usa flexbox?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propiedades-para-el-padre" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propiedades para el padre
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propiedades para el padre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display" class="md-nav__link">
+    <span class="md-ellipsis">
+      display
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flex-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      flex-direction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flex-wrap" class="md-nav__link">
+    <span class="md-ellipsis">
+      flex-wrap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flex-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      flex-flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justify-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      justify-content
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#align-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      align-items
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#align-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      align-content
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propiedades-para-el-hijo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propiedades para el hijo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propiedades para el hijo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#order" class="md-nav__link">
+    <span class="md-ellipsis">
+      order
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flex-grow" class="md-nav__link">
+    <span class="md-ellipsis">
+      flex-grow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flex-shrink" class="md-nav__link">
+    <span class="md-ellipsis">
+      flex-shrink
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chuleta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chuleta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actividades
     </span>
   </a>
   
@@ -902,11 +1099,53 @@
   
   
     <li class="md-nav__item">
-      <a href="034_Flexbox.html" class="md-nav__link">
+      <a href="036_Propiedades.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    3.4. Flexbox
+    3.6. Propiedades CSS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="037_ResponsiveDesign.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.7. Responsive Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Referencias.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Referencias
   </span>
   
 
@@ -938,24 +1177,102 @@
                   
 
 
-<h1 id="modelo-de-cajas">Modelo de cajas<a class="headerlink" href="#modelo-de-cajas" title="Permanent link">&para;</a></h1>
-<p>La representación básica del modelo de cajas se basa en varios conceptos importantes, como veremos a continuación:</p>
+<h1 id="flexbox">Flexbox<a class="headerlink" href="#flexbox" title="Permanent link">&para;</a></h1>
+<p><a href="../../resources/css-flexbox-poster.pdf">Flexbox</a> es un método de diseño de página unidimensional para compaginar elementos en filas o columnas. Los elementos de contenido se ensanchan para rellenar el espacio adicional y se encogen para caber en espacios más pequeños.
+Anteriormente, para ubicar elementos en pantallas se utilizaba el método flotante o de floats. En el futuro, todo hace indicar que se usará el método grid.</p>
+<h2 id="por-que-usamos-flexbox">¿Por qué usamos flexbox?<a class="headerlink" href="#por-que-usamos-flexbox" title="Permanent link">&para;</a></h2>
+<p>Durante mucho tiempo, las únicas herramientas fiables con compatibilidad cruzada entre navegadores disponibles para crear diseños CSS fueron cosas como la flotación. Están bien y funcionan, pero de alguna manera también limitan bastante y frustran.</p>
+<p>Con tales herramientas resulta difícil, si no imposible, lograr obtener en cualquier forma conveniente y flexible un diseño de página sencillo con unos requisitos como los siguientes:</p>
 <ul>
-<li>El borde (<a href="https://developer.mozilla.org/es/docs/Web/CSS/border">border</a>), en negro, es el límite que separa el interior del exterior del elemento.</li>
-<li>El márgen (<a href="https://developer.mozilla.org/es/docs/Web/CSS/margin">margin</a>), en naranja, es la parte exterior del elemento, por fuera del borde.</li>
-<li>El relleno (<a href="https://developer.mozilla.org/es/docs/Web/CSS/padding">padding</a>), en verde, es la parte interior del elemento, entre el contenido y el borde.</li>
-<li>El contenido, en azul, es la parte interior del elemento, excluyendo el relleno.</li>
+<li>Centrar verticalmente un bloque de contenido dentro de su elemento padre.</li>
+<li>Hacer que todos los elementos secundarios de un contenedor ocupen una cantidad igual del ancho/alto disponible, independientemente del ancho/alto que haya disponible.</li>
+<li>Hacer que todas las columnas en una compaginación en columnas múltiples adopten la misma altura incluso si contienen cantidades diferentes de contenido.</li>
+</ul>
+<h2 id="como-se-usa-flexbox">¿Cómo se usa flexbox?<a class="headerlink" href="#como-se-usa-flexbox" title="Permanent link">&para;</a></h2>
+<p>Dado que flexbox es un módulo completo y no una sola propiedad, implica muchas cosas, incluido su conjunto completo de propiedades. Algunos de ellos están destinados a establecerse en el contenedor (elemento principal, conocido como "contenedor flexible"), mientras que otros están destinados a establecerse en los elementos secundarios (dichos "elementos flexibles").</p>
+<p>Si el diseño "regular" se basa en direcciones de flujo en bloque y en línea, el diseño flexible se basa en "direcciones de flujo flexible". Los elementos se distribuirán siguiendo el eje ( main-axis: main-start o main-end) o la cruz (de cross-start o cross-end).</p>
+<ul>
+<li>eje principal : el eje principal de un contenedor flexible es el eje principal a lo largo del cual se disponen los elementos flexibles. Cuidado, no es necesariamente horizontal; Depende de la flex-direction</li>
+<li>inicio principal | main-end : los elementos flexibles se colocan dentro del contenedor comenzando desde el inicio principal y yendo al extremo principal.</li>
+<li>tamaño principal : el ancho o la altura de un elemento flexible, lo que esté en la dimensión principal, es el tamaño principal del elemento. La propiedad de tamaño principal del elemento flexible es la propiedad 'ancho' o 'alto', cualquiera que esté en la dimensión principal.</li>
+<li>eje transversal : el eje perpendicular al eje principal se denomina eje transversal. Su dirección depende de la dirección del eje principal.</li>
+<li>inicio cruzado | extremo cruzado : las líneas flexibles se llenan con artículos y se colocan en el contenedor comenzando en el lado de inicio cruzado del contenedor flexible y yendo hacia el lado del extremo cruzado.</li>
+<li>tamaño cruzado : el ancho o la altura de un elemento flexible, lo que esté en la dimensión cruzada, es el tamaño cruzado del elemento. La propiedad de tamaño cruzado es cualquiera de 'ancho' o 'alto' que esté en la dimensión cruzada.</li>
 </ul>
 <figure>
-  <a class="glightbox" href="../../img/ut03/01_modelo-de-cajas.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Modelo de cajas" src="../../img/ut03/01_modelo-de-cajas.png" /></a>
-  <figcaption>Modelo de cajas</figcaption>
+  <a class="glightbox" href="../../img/ut03/03_flexI.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Flex" src="../../img/ut03/03_flexI.png" /></a>
 </figure>
-<h2 id="zonas-de-un-elemento">Zonas de un elemento<a class="headerlink" href="#zonas-de-un-elemento" title="Permanent link">&para;</a></h2>
-<p>Antes de continuar, es importante saber que en CSS existen ciertas palabras clave para hacer referencia a una zona u orientación concreta sobre un elemento. Son conceptos muy sencillos y prácticamente lógicos, por lo que no tendrás ningún problema en comprenderlos. Son los siguientes:</p>
-<figure>
-  <a class="glightbox" href="../../img/ut03/02_positions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Posiciones" src="../../img/ut03/02_positions.png" /></a>
-  <figcaption>Posiciones</figcaption>
-</figure>
+<h2 id="propiedades-para-el-padre">Propiedades para el padre<a class="headerlink" href="#propiedades-para-el-padre" title="Permanent link">&para;</a></h2>
+<h3 id="display"><code>display</code><a class="headerlink" href="#display" title="Permanent link">&para;</a></h3>
+<p>Esto define un contenedor flexible; en línea o bloque dependiendo del valor dado. Permite un contexto flexible para todos sus hijos directos. Ten en cuenta que las columnas CSS no tienen efecto en un contenedor flexible.</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-0-1"><span class="linenos" data-linenos="1 "></span><span class="p">.</span><span class="nc">container</span><span class="p">{</span>
+</span><span id="__span-0-2"><span class="linenos" data-linenos="2 "></span><span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="kc">flex</span><span class="p">;</span>
+</span><span id="__span-0-3"><span class="linenos" data-linenos="3 "></span><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="flex-direction"><code>flex-direction</code><a class="headerlink" href="#flex-direction" title="Permanent link">&para;</a></h3>
+<p>Esto establece el eje principal, definiendo así la dirección en que se colocan los artículos flexibles en el contenedor flexible. Flexbox es (aparte del envoltorio opcional) un concepto de diseño de una sola dirección. Piense en los elementos flexibles como dispuestos principalmente en filas horizontales o columnas verticales.</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-1-1"><span class="linenos" data-linenos="1 "></span><span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><span class="linenos" data-linenos="2 "></span><span class="w">  </span><span class="k">flex-direction</span><span class="p">:</span><span class="w"> </span><span class="kc">row</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">row-reverse</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">column</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">column-reverse</span><span class="p">;</span>
+</span><span id="__span-1-3"><span class="linenos" data-linenos="3 "></span><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="flex-wrap"><code>flex-wrap</code><a class="headerlink" href="#flex-wrap" title="Permanent link">&para;</a></h3>
+<p>De forma predeterminada, todos los elementos flexibles intentarán encajar en una línea. Puede cambiar eso y permitir que los elementos se ajusten según sea necesario con esta propiedad.</p>
+<ul>
+<li>nowrap(predeterminado): todos los elementos flexibles estarán en una línea</li>
+<li>wrap: los elementos flexibles se ajustarán a varias líneas, de arriba a abajo.</li>
+<li>wrap-reverse: los elementos flexibles se ajustarán a varias líneas de abajo hacia arriba.</li>
+</ul>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-2-1"><span class="linenos" data-linenos="1 "></span><span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><span class="linenos" data-linenos="2 "></span><span class="w">  </span><span class="k">flex-wrap</span><span class="p">:</span><span class="w"> </span><span class="kc">nowrap</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">wrap</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">wrap-reverse</span><span class="p">;</span>
+</span><span id="__span-2-3"><span class="linenos" data-linenos="3 "></span><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="flex-flow"><code>flex-flow</code><a class="headerlink" href="#flex-flow" title="Permanent link">&para;</a></h3>
+<p>Esta es una forma abreviada de las propiedades flex-direction y flex-wrap, que juntas definen los ejes principal y transversal del contenedor flexible. El valor predeterminado es row nowrap.</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-3-1"><span class="linenos" data-linenos="1 "></span><span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><span class="linenos" data-linenos="2 "></span><span class="w">  </span><span class="k">flex-flow</span><span class="p">:</span><span class="w"> </span><span class="kc">column</span><span class="w"> </span><span class="kc">wrap</span><span class="p">;</span>
+</span><span id="__span-3-3"><span class="linenos" data-linenos="3 "></span><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="justify-content"><code>justify-content</code><a class="headerlink" href="#justify-content" title="Permanent link">&para;</a></h3>
+<p>Esto define la alineación a lo largo del eje principal. Ayuda a distribuir el espacio libre adicional sobrante cuando todos los elementos flexibles de una línea son inflexibles o son flexibles pero han alcanzado su tamaño máximo. También ejerce cierto control sobre la alineación de los elementos cuando desbordan la línea.</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-4-1"><span class="linenos" data-linenos="1 "></span><span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><span class="linenos" data-linenos="2 "></span><span class="w">  </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">flex-start</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">flex-end</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">center</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">space-between</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">space-around</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">space</span><span class="o">-</span><span class="n">evenly</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">start</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">end</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">left</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">right</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">safe</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">unsafe</span><span class="p">;</span>
+</span><span id="__span-4-3"><span class="linenos" data-linenos="3 "></span><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="align-items"><code>align-items</code><a class="headerlink" href="#align-items" title="Permanent link">&para;</a></h3>
+<p>Esto define la alineación a lo largo del eje principal. Ayuda a distribuir el espacio libre adicional sobrante cuando todos los elementos flexibles de una línea son inflexibles o son flexibles pero han alcanzado su tamaño máximo.  También ejerce cierto control sobre la alineación de los elementos cuando desbordan la línea.</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-5-1"><span class="linenos" data-linenos="1 "></span><span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><span class="linenos" data-linenos="2 "></span><span class="w">  </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">stretch</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">flex-start</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">flex-end</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">center</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">baseline</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">first</span><span class="w"> </span><span class="kc">baseline</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">last</span><span class="w"> </span><span class="kc">baseline</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">start</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">end</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">self-start</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">self-end</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="n">safe</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">unsafe</span><span class="p">;</span>
+</span><span id="__span-5-3"><span class="linenos" data-linenos="3 "></span><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="align-content"><code>align-content</code><a class="headerlink" href="#align-content" title="Permanent link">&para;</a></h3>
+<p>Esto alinea las líneas de un contenedor flexible cuando hay espacio adicional en el eje transversal, de forma similar a como justify-content se alinean los elementos individuales dentro del eje principal.</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-6-1"><span class="linenos" data-linenos="1 "></span><span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><span class="linenos" data-linenos="2 "></span><span class="w">  </span><span class="k">align-content</span><span class="p">:</span><span class="w"> </span><span class="kc">flex-start</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">flex-end</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">center</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">space-between</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">space-around</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">space</span><span class="o">-</span><span class="n">evenly</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">stretch</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">start</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">end</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">baseline</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">first</span><span class="w"> </span><span class="kc">baseline</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">last</span><span class="w"> </span><span class="kc">baseline</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="n">safe</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">unsafe</span><span class="p">;</span>
+</span><span id="__span-6-3"><span class="linenos" data-linenos="3 "></span><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="propiedades-para-el-hijo">Propiedades para el hijo<a class="headerlink" href="#propiedades-para-el-hijo" title="Permanent link">&para;</a></h2>
+<h3 id="order"><code>order</code><a class="headerlink" href="#order" title="Permanent link">&para;</a></h3>
+<p>De forma predeterminada, los elementos flexibles se presentan en el orden de origen. Sin embargo, la orderpropiedad controla el orden en que aparecen en el contenedor flexible.</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-7-1"><span class="linenos" data-linenos="1 "></span><span class="p">.</span><span class="nc">item</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><span class="linenos" data-linenos="2 "></span><span class="w">  </span><span class="k">order</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c">/* default is 0 */</span>
+</span><span id="__span-7-3"><span class="linenos" data-linenos="3 "></span><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="flex-grow"><code>flex-grow</code><a class="headerlink" href="#flex-grow" title="Permanent link">&para;</a></h3>
+<p>Esto define la capacidad de crecimiento de un elemento flexible si es necesario. Acepta un valor sin unidades que sirve como proporción. Determina qué cantidad de espacio disponible dentro del contenedor flexible debe ocupar el artículo.</p>
+<p>Si todos los elementos se han flex-grow establecido en 1, el espacio restante en el contenedor se distribuirá por igual a todos los niños. Si uno de los hijos tiene un valor de 2, ese hijo ocuparía el doble de espacio que cualquiera de los otros (o lo intentará, al menos).</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-8-1"><span class="linenos" data-linenos="1 "></span><span class="p">.</span><span class="nc">item</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-8-2"><span class="linenos" data-linenos="2 "></span><span class="w">  </span><span class="k">flex-grow</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="c">/* default 0 */</span>
+</span><span id="__span-8-3"><span class="linenos" data-linenos="3 "></span><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="flex-shrink"><code>flex-shrink</code><a class="headerlink" href="#flex-shrink" title="Permanent link">&para;</a></h3>
+<p>Esto define la capacidad de que un elemento flexible se encoja si es necesario.</p>
+<div class="language-css highlight"><pre><span></span><code><span id="__span-9-1"><span class="linenos" data-linenos="1 "></span><span class="p">.</span><span class="nc">item</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-2"><span class="linenos" data-linenos="2 "></span><span class="w">  </span><span class="k">flex-shrink</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="c">/* default 1 */</span>
+</span><span id="__span-9-3"><span class="linenos" data-linenos="3 "></span><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="chuleta">Chuleta<a class="headerlink" href="#chuleta" title="Permanent link">&para;</a></h2>
+<p>Recuerda que tienes disponible multitud de recursos sobre esta materia. He dejado una <a href="../../resources/css-flexbox-poster.pdf">cheatsheet</a> es para que la tengas a mano.</p>
+<h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
 <!-- Resultados de Aprendizaje & Criterios de Evaluación -->
 <!-- Instrumentos de Evaluación -->
 <!-- Instrumentos de Calificación -->
@@ -996,7 +1313,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href="032_Uso.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 3.2. Uso de CSS">
+          <a href="034_ModeloCajas.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 3.4. Modelo de cajas">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1006,20 +1323,20 @@
                 Anterior
               </span>
               <div class="md-ellipsis">
-                3.2. Uso de CSS
+                3.4. Modelo de cajas
               </div>
             </div>
           </a>
         
         
           
-          <a href="034_Flexbox.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 3.4. Flexbox">
+          <a href="036_Propiedades.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 3.6. Propiedades CSS">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                3.4. Flexbox
+                3.6. Propiedades CSS
               </div>
             </div>
             <div class="md-footer__button md-icon">
