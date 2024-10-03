@@ -1058,6 +1058,161 @@
   <figcaption>Posiciones</figcaption>
 </figure>
 <h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 310</strong> (<abbr title="Instala gestores de contenidos, identificando sus aplicaciones y configurándolos según requerimientos.">RA1</abbr> / <abbr title="Se han gestionado usuarios con roles diferentes.">CE1b</abbr> / <abbr title="Escala de valores.">IC1</abbr>/ 3p) Inicializar los elementos HTML h1,h2 y h3 con bordes de 2 pixeles, color azul y diferentes estilos para cada uno. Crear una página HTML que los utilice.</p>
+</li>
+<li>
+<p><strong><abbr title="Actividades de refuerzo.">AR</abbr> 311</strong> (<abbr title="Instala gestores de contenidos, identificando sus aplicaciones y configurándolos según requerimientos.">RA1</abbr> / <abbr title="Se han gestionado usuarios con roles diferentes.">CE1b</abbr> / <abbr title="Escala de valores.">IC1</abbr>/ 3p) Crear una clase .titulosecundario que inicialice el borde superior e inferior con ancho de 2 pixeles y los bordes laterales con cero pixel. A su elección queda el estilo y color.</p>
+</li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 312</strong> (<abbr title="Instala gestores de contenidos, identificando sus aplicaciones y configurándolos según requerimientos.">RA1</abbr> / <abbr title="Se han gestionado usuarios con roles diferentes.">CE1b</abbr> / <abbr title="Escala de valores.">IC1</abbr>/ 3p) Definir una clase titulo que fije los padding de izquierda y derecha con 20 pixeles y el superior e inferior en 10. Escribir un texto dentro del elemento h1.</p>
+</li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 313</strong> (<abbr title="Instala gestores de contenidos, identificando sus aplicaciones y configurándolos según requerimientos.">RA1</abbr> / <abbr title="Se han gestionado usuarios con roles diferentes.">CE1b</abbr> / <abbr title="Escala de valores.">IC1</abbr>/ 3p)Disponer títulos de primer y segundo nivel con un margen de 5 pixeles en la parte superior e inferior del elemento HTML.</p>
+</li>
+<li>
+<p><strong><abbr title="Prácticas">PR</abbr> 314</strong> (<abbr title="Instala gestores de contenidos, identificando sus aplicaciones y configurándolos según requerimientos.">RA1</abbr> / <abbr title="Se han gestionado usuarios con roles diferentes.">CE1b</abbr> / <abbr title="Escala de valores.">IC1</abbr>/ 5p) A partir de la página web que se te proporciona, debes escribir las reglas CSS necesarias para lograr una página web que tenga el mismo aspecto que la siguiente imagen:</p>
+</li>
+</ul>
+<figure>
+  <a class="glightbox" href="../../img/ut03/314.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PR 314" src="../../img/ut03/314.png" /></a>
+</figure>
+<p>Los bordes que debes definir son:</p>
+<ul>
+<li>Encabezado nivel 1: borde inferior con una anchura de 2px, sólido y de color azul (#00F).</li>
+<li>Encabezado nivel 2: borde completo con una anchura de 2px, sólido y de color gris (#AAA).</li>
+<li>Lista con los datos del libro: borde superior e inferior con una anchura de 4px, punteado y de color rojo (#F00).</li>
+<li>Lista con el contenido del libro: borde completo con una anchura de 2px, con guiones y de color verde (#0F0).</li>
+</ul>
+<p>Puedes modificar el código HTML proporcionado para añadir los identificadores y clases que necesites. </p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><span class="linenos" data-linenos=" 1 "></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span id="__span-0-2"><span class="linenos" data-linenos=" 2 "></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><span class="linenos" data-linenos=" 3 "></span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><span class="linenos" data-linenos=" 4 "></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+</span><span id="__span-0-5"><span class="linenos" data-linenos=" 5 "></span><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>HTML <span class="ni">&amp;amp;</span> CSS: Curso práctico avanzado<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><span id="__span-0-6"><span class="linenos" data-linenos=" 6 "></span><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-0-7"><span class="linenos" data-linenos=" 7 "></span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-0-8"><span class="linenos" data-linenos=" 8 "></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>HTML <span class="ni">&amp;amp;</span> CSS: Curso práctico avanzado<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-0-9"><span class="linenos" data-linenos=" 9 "></span>
+</span><span id="__span-0-10"><span class="linenos" data-linenos="10 "></span><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Datos del libro<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-0-11"><span class="linenos" data-linenos="11 "></span>
+</span><span id="__span-0-12"><span class="linenos" data-linenos="12 "></span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-13"><span class="linenos" data-linenos="13 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Título: HTML <span class="ni">&amp;amp;</span> CSS: Curso práctico avanzado<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-14"><span class="linenos" data-linenos="14 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Autor: Sergio Luján Mora<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-15"><span class="linenos" data-linenos="15 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Editorial: Publicaciones Altaria<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-16"><span class="linenos" data-linenos="16 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Año de publicación: 2015<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-17"><span class="linenos" data-linenos="17 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>ISBN: 978-84-944049-4-8<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-18"><span class="linenos" data-linenos="18 "></span><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-19"><span class="linenos" data-linenos="19 "></span>
+</span><span id="__span-0-20"><span class="linenos" data-linenos="20 "></span>
+</span><span id="__span-0-21"><span class="linenos" data-linenos="21 "></span><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Descripción del libro<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-0-22"><span class="linenos" data-linenos="22 "></span>
+</span><span id="__span-0-23"><span class="linenos" data-linenos="23 "></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-0-24"><span class="linenos" data-linenos="24 "></span>Aunque los inicios de Internet se remontan a los años sesenta, no ha sido hasta los años noventa cuando, gracias a la Web, se ha extendido su uso por todo el mundo. En pocos años, la Web ha evolucionado enormemente: se ha pasado de páginas sencillas, con pocas imágenes y contenidos estáticos que eran visitadas por unos pocos usuarios a páginas complejas, con contenidos dinámicos que provienen de bases de datos y que son visitadas por miles de usuarios al mismo tiempo.
+</span><span id="__span-0-25"><span class="linenos" data-linenos="25 "></span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-0-26"><span class="linenos" data-linenos="26 "></span>
+</span><span id="__span-0-27"><span class="linenos" data-linenos="27 "></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-0-28"><span class="linenos" data-linenos="28 "></span>Todas las páginas están internamente construidas con la misma tecnología, con el Lenguaje de marcas de hipertexto (Hypertext Markup Language, HTML) y con las Hojas de estilo en cascada (Cascading Style Sheets, CSS).
+</span><span id="__span-0-29"><span class="linenos" data-linenos="29 "></span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-0-30"><span class="linenos" data-linenos="30 "></span>
+</span><span id="__span-0-31"><span class="linenos" data-linenos="31 "></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-0-32"><span class="linenos" data-linenos="32 "></span>Este libro es adecuado para cualquiera que tenga interés en aprender a desarrollar sus propias páginas web. No son necesarios conocimientos previos para aprender con este libro, lo único que es necesario es saber utilizar un ordenador y saber navegar por la Web.
+</span><span id="__span-0-33"><span class="linenos" data-linenos="33 "></span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-0-34"><span class="linenos" data-linenos="34 "></span>
+</span><span id="__span-0-35"><span class="linenos" data-linenos="35 "></span>
+</span><span id="__span-0-36"><span class="linenos" data-linenos="36 "></span><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Contenido del libro<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-0-37"><span class="linenos" data-linenos="37 "></span>
+</span><span id="__span-0-38"><span class="linenos" data-linenos="38 "></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-0-39"><span class="linenos" data-linenos="39 "></span>El contenido de este libro se estructura en tres apartados bien diferenciados:
+</span><span id="__span-0-40"><span class="linenos" data-linenos="40 "></span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-0-41"><span class="linenos" data-linenos="41 "></span>
+</span><span id="__span-0-42"><span class="linenos" data-linenos="42 "></span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-43"><span class="linenos" data-linenos="43 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>En la primera parte del libro se trabajan conceptos generales que son necesarios para poder desarrollar páginas web; se explican conceptos de estructura física y estructura lógica (o estructura de navegación) de un sitio web. Se detalla cómo influye la estructura física en las URL o direcciones que se emplean a la hora de crear los enlaces de un sitio web. Pasando por el concepto de &quot;estándar web&quot;, un término general que se emplea para refererirse a los estándares que define su funcionamiento como HTML y CSS, empleados para el desarrollo de las páginas web en el lado del cliente.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-44"><span class="linenos" data-linenos="44 "></span>
+</span><span id="__span-0-45"><span class="linenos" data-linenos="45 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>En la segunda parte se trabaja HTML. Partiendo de la estructura básica de una página web, se explican las etiquetas de HTML que se utilizan para definir el texto, los enlaces, las listas, las tablas, los formularios y los elementos multimedia.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-46"><span class="linenos" data-linenos="46 "></span>
+</span><span id="__span-0-47"><span class="linenos" data-linenos="47 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>En la tercera y última parte se explica CSS, el lenguaje que se emplea para definir el formato y la presentación de una página web. Se explica cómo utilizar el color, cómo definir la presentación del texto, de las tablas y de los formularios; cómo realizar transformaciones y transiciones con el fin de diseñar una página web.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-0-48"><span class="linenos" data-linenos="48 "></span><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-0-49"><span class="linenos" data-linenos="49 "></span><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-0-50"><span class="linenos" data-linenos="50 "></span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Reescribe el documento HTML para que sea semántico.</p>
+<ul>
+<li><strong><abbr title="Prácticas">PR</abbr> 315</strong> (<abbr title="Instala gestores de contenidos, identificando sus aplicaciones y configurándolos según requerimientos.">RA1</abbr> / <abbr title="Se han gestionado usuarios con roles diferentes.">CE1b</abbr> / <abbr title="Escala de valores.">IC1</abbr>/ 5p) A partir de la página web que se te proporciona, debes escribir las reglas CSS necesarias para lograr una página web que tenga el mismo aspecto que la siguiente imagen:</li>
+</ul>
+<figure>
+  <a class="glightbox" href="../../img/ut03/315A.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PR 315" src="../../img/ut03/315A.png" /></a>
+</figure>
+<p>Los bordes que debes definir son:</p>
+<ul>
+<li>Encabezado nivel 1: borde completo con una anchura de 2px, sólido y de color azul (#00F).</li>
+<li>Encabezado nivel 2: borde completo con una anchura de 2px, sólido y de color gris (#AAA).</li>
+<li>Listas: borde completo con una anchura de 2px, solido y de color verde (#0F0).</li>
+</ul>
+<p>En la siguiente imagen se indican las dimensiones que deben tener ciertas partes de la página: </p>
+<figure>
+  <a class="glightbox" href="../../img/ut03/315B.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PR 315" src="../../img/ut03/315B.png" /></a>
+</figure>
+<p>a. relleno izquierdo y derecho de 10px.
+b. relleno de 10 px.
+c. margen superior e inferior de 30px.
+d.  relleno de 5 px.
+e. margen superior e inferior de 15px.
+f. margen entre los elementos de la lista de 15 px.</p>
+<p>Puedes modificar el código HTML proporcionado para añadir los identificadores y clases que necesites. </p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><span class="linenos" data-linenos=" 1 "></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span id="__span-1-2"><span class="linenos" data-linenos=" 2 "></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span><span id="__span-1-3"><span class="linenos" data-linenos=" 3 "></span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-1-4"><span class="linenos" data-linenos=" 4 "></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+</span><span id="__span-1-5"><span class="linenos" data-linenos=" 5 "></span><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>HTML <span class="ni">&amp;amp;</span> CSS: Curso práctico avanzado<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><span id="__span-1-6"><span class="linenos" data-linenos=" 6 "></span><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-1-7"><span class="linenos" data-linenos=" 7 "></span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-1-8"><span class="linenos" data-linenos=" 8 "></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>HTML <span class="ni">&amp;amp;</span> CSS: Curso práctico avanzado<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-1-9"><span class="linenos" data-linenos=" 9 "></span>
+</span><span id="__span-1-10"><span class="linenos" data-linenos="10 "></span><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Datos del libro<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-1-11"><span class="linenos" data-linenos="11 "></span>
+</span><span id="__span-1-12"><span class="linenos" data-linenos="12 "></span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-1-13"><span class="linenos" data-linenos="13 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Título: HTML <span class="ni">&amp;amp;</span> CSS: Curso práctico avanzado<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-1-14"><span class="linenos" data-linenos="14 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Autor: Sergio Luján Mora<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-1-15"><span class="linenos" data-linenos="15 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Editorial: Publicaciones Altaria<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-1-16"><span class="linenos" data-linenos="16 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Año de publicación: 2015<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-1-17"><span class="linenos" data-linenos="17 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>ISBN: 978-84-944049-4-8<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-1-18"><span class="linenos" data-linenos="18 "></span><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-1-19"><span class="linenos" data-linenos="19 "></span>
+</span><span id="__span-1-20"><span class="linenos" data-linenos="20 "></span>
+</span><span id="__span-1-21"><span class="linenos" data-linenos="21 "></span><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Descripción del libro<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-1-22"><span class="linenos" data-linenos="22 "></span>
+</span><span id="__span-1-23"><span class="linenos" data-linenos="23 "></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-1-24"><span class="linenos" data-linenos="24 "></span>Aunque los inicios de Internet se remontan a los años sesenta, no ha sido hasta los años noventa cuando, gracias a la Web, se ha extendido su uso por todo el mundo. En pocos años, la Web ha evolucionado enormemente: se ha pasado de páginas sencillas, con pocas imágenes y contenidos estáticos que eran visitadas por unos pocos usuarios a páginas complejas, con contenidos dinámicos que provienen de bases de datos y que son visitadas por miles de usuarios al mismo tiempo.
+</span><span id="__span-1-25"><span class="linenos" data-linenos="25 "></span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-1-26"><span class="linenos" data-linenos="26 "></span>
+</span><span id="__span-1-27"><span class="linenos" data-linenos="27 "></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-1-28"><span class="linenos" data-linenos="28 "></span>Todas las páginas están internamente construidas con la misma tecnología, con el Lenguaje de marcas de hipertexto (Hypertext Markup Language, HTML) y con las Hojas de estilo en cascada (Cascading Style Sheets, CSS).
+</span><span id="__span-1-29"><span class="linenos" data-linenos="29 "></span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-1-30"><span class="linenos" data-linenos="30 "></span>
+</span><span id="__span-1-31"><span class="linenos" data-linenos="31 "></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-1-32"><span class="linenos" data-linenos="32 "></span>Este libro es adecuado para cualquiera que tenga interés en aprender a desarrollar sus propias páginas web. No son necesarios conocimientos previos para aprender con este libro, lo único que es necesario es saber utilizar un ordenador y saber navegar por la Web.
+</span><span id="__span-1-33"><span class="linenos" data-linenos="33 "></span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-1-34"><span class="linenos" data-linenos="34 "></span>
+</span><span id="__span-1-35"><span class="linenos" data-linenos="35 "></span>
+</span><span id="__span-1-36"><span class="linenos" data-linenos="36 "></span><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Contenido del libro<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-1-37"><span class="linenos" data-linenos="37 "></span>
+</span><span id="__span-1-38"><span class="linenos" data-linenos="38 "></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-1-39"><span class="linenos" data-linenos="39 "></span>El contenido de este libro se estructura en tres apartados bien diferenciados:
+</span><span id="__span-1-40"><span class="linenos" data-linenos="40 "></span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-1-41"><span class="linenos" data-linenos="41 "></span>
+</span><span id="__span-1-42"><span class="linenos" data-linenos="42 "></span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-1-43"><span class="linenos" data-linenos="43 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>En la primera parte del libro se trabajan conceptos generales que son necesarios para poder desarrollar páginas web; se explican conceptos de estructura física y estructura lógica (o estructura de navegación) de un sitio web. Se detalla cómo influye la estructura física en las URL o direcciones que se emplean a la hora de crear los enlaces de un sitio web. Pasando por el concepto de &quot;estándar web&quot;, un término general que se emplea para refererirse a los estándares que define su funcionamiento como HTML y CSS, empleados para el desarrollo de las páginas web en el lado del cliente.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-1-44"><span class="linenos" data-linenos="44 "></span>
+</span><span id="__span-1-45"><span class="linenos" data-linenos="45 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>En la segunda parte se trabaja HTML. Partiendo de la estructura básica de una página web, se explican las etiquetas de HTML que se utilizan para definir el texto, los enlaces, las listas, las tablas, los formularios y los elementos multimedia.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-1-46"><span class="linenos" data-linenos="46 "></span>
+</span><span id="__span-1-47"><span class="linenos" data-linenos="47 "></span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>En la tercera y última parte se explica CSS, el lenguaje que se emplea para definir el formato y la presentación de una página web. Se explica cómo utilizar el color, cómo definir la presentación del texto, de las tablas y de los formularios; cómo realizar transformaciones y transiciones con el fin de diseñar una página web.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-1-48"><span class="linenos" data-linenos="48 "></span><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-1-49"><span class="linenos" data-linenos="49 "></span><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-1-50"><span class="linenos" data-linenos="50 "></span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Reescribe el documento HTML para que sea semántico.</p>
 <!-- Resultados de Aprendizaje & Criterios de Evaluación -->
 <!-- Instrumentos de Evaluación -->
 <!-- Instrumentos de Calificación -->
