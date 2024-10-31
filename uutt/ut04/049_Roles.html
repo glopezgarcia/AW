@@ -88,6 +88,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#roles-de-usuario-en-wordpress" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1180,6 +1185,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4.9. Roles
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="049_Roles.html" class="md-nav__link md-nav__link--active">
         
@@ -1190,6 +1208,139 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-son-los-roles-de-usuario-en-wordpress" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué son los roles de usuario en WordPress?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roles-de-usuario-predeterminados-en-wordpress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Roles de usuario predeterminados en WordPress
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Roles de usuario predeterminados en WordPress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#administrador-administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Administrador (Administrator)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editor-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Editor (Editor)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autor-author" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autor (Author)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colaborador-contributor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colaborador (Contributor)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suscriptor-subscriber" class="md-nav__link">
+    <span class="md-ellipsis">
+      Suscriptor (Subscriber)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#super-administrador-super-admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Super Administrador (Super Admin)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modificacion-de-roles-y-capacidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modificación de roles y capacidades
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-asignar-un-rol-a-un-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Cómo asignar un rol a un usuario?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consejos-de-seguridad-al-gestionar-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consejos de seguridad al gestionar roles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabla-de-roles-de-usuario-en-wordpress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabla de roles de usuario en WordPress
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1281,9 +1432,135 @@
                   
 
 
-  <h1>4.9. Roles</h1>
-
-
+<h1 id="roles-de-usuario-en-wordpress">Roles de usuario en WordPress<a class="headerlink" href="#roles-de-usuario-en-wordpress" title="Permanent link">&para;</a></h1>
+<h2 id="que-son-los-roles-de-usuario-en-wordpress">¿Qué son los roles de usuario en WordPress?<a class="headerlink" href="#que-son-los-roles-de-usuario-en-wordpress" title="Permanent link">&para;</a></h2>
+<p>Los <strong>roles de usuario en WordPress</strong> permiten asignar permisos específicos a cada usuario dentro de un sitio, controlando las acciones que cada uno puede realizar. Esta funcionalidad es útil para sitios que cuentan con múltiples colaboradores, como blogs, revistas digitales o tiendas en línea.</p>
+<p>Cada rol tiene un conjunto de permisos o <strong>capacidades</strong> (capabilities), que definen lo que el usuario puede y no puede hacer dentro del sitio, como publicar, editar contenido, gestionar usuarios, entre otros.</p>
+<h2 id="roles-de-usuario-predeterminados-en-wordpress">Roles de usuario predeterminados en WordPress<a class="headerlink" href="#roles-de-usuario-predeterminados-en-wordpress" title="Permanent link">&para;</a></h2>
+<p>WordPress cuenta con seis roles de usuario principales:</p>
+<h3 id="administrador-administrator">Administrador (Administrator)<a class="headerlink" href="#administrador-administrator" title="Permanent link">&para;</a></h3>
+<p>El rol de <strong>Administrador</strong> es el más alto en la jerarquía y tiene acceso a todas las configuraciones y capacidades del sitio. Un administrador puede:</p>
+<ul>
+<li>Crear, editar y eliminar cualquier contenido, independientemente de quién lo haya creado.</li>
+<li>Instalar, activar y desactivar plugins y temas.</li>
+<li>Gestionar todos los ajustes del sitio.</li>
+<li>Añadir, editar y eliminar otros usuarios, incluyendo otros administradores.</li>
+</ul>
+<blockquote>
+<p><strong>Nota</strong>: Este rol se debe asignar con cuidado, ya que los administradores tienen control total del sitio.</p>
+</blockquote>
+<h3 id="editor-editor">Editor (Editor)<a class="headerlink" href="#editor-editor" title="Permanent link">&para;</a></h3>
+<p>El <strong>Editor</strong> tiene acceso completo a todos los contenidos del sitio, pero no a las configuraciones y ajustes globales. Las capacidades de un Editor incluyen:</p>
+<ul>
+<li>Publicar, editar y eliminar cualquier entrada o página, independientemente de quién la haya creado.</li>
+<li>Moderar comentarios.</li>
+<li>Gestionar categorías y etiquetas.</li>
+</ul>
+<p>Este rol es ideal para supervisores de contenido o jefes de redacción en blogs o sitios de noticias.</p>
+<h3 id="autor-author">Autor (Author)<a class="headerlink" href="#autor-author" title="Permanent link">&para;</a></h3>
+<p>El <strong>Autor</strong> tiene permisos limitados que le permiten gestionar solo su propio contenido. Sus capacidades incluyen:</p>
+<ul>
+<li>Escribir, editar, publicar y eliminar sus propias entradas.</li>
+<li>Cargar archivos multimedia (imágenes, videos, documentos) en sus entradas.</li>
+</ul>
+<p>Un autor <strong>no puede</strong> editar publicaciones de otros usuarios ni cambiar configuraciones del sitio. Este rol es ideal para colaboradores que solo necesitan publicar su propio contenido.</p>
+<h3 id="colaborador-contributor">Colaborador (Contributor)<a class="headerlink" href="#colaborador-contributor" title="Permanent link">&para;</a></h3>
+<p>El <strong>Colaborador</strong> tiene permisos muy básicos y no puede publicar contenido por sí mismo. Este rol es útil para escritores que no necesitan publicar directamente. Las capacidades del Colaborador incluyen:</p>
+<ul>
+<li>Escribir y editar sus propias entradas.</li>
+<li>Enviar sus entradas para que un Editor o Administrador las revise y publique.</li>
+</ul>
+<p>Un colaborador <strong>no puede</strong>:</p>
+<ul>
+<li>Publicar contenido.</li>
+<li>Cargar archivos multimedia (debe pedir ayuda para añadir imágenes).</li>
+</ul>
+<h3 id="suscriptor-subscriber">Suscriptor (Subscriber)<a class="headerlink" href="#suscriptor-subscriber" title="Permanent link">&para;</a></h3>
+<p>El <strong>Suscriptor</strong> tiene el nivel de acceso más bajo en WordPress y solo puede:</p>
+<ul>
+<li>Acceder al área de administración para gestionar su propio perfil.</li>
+<li>Comentar en las publicaciones si se requiere autenticación para comentar.</li>
+</ul>
+<p>Este rol es adecuado para sitios que requieren que los usuarios estén registrados para comentar o acceder a contenido restringido.</p>
+<h3 id="super-administrador-super-admin">Super Administrador (Super Admin)<a class="headerlink" href="#super-administrador-super-admin" title="Permanent link">&para;</a></h3>
+<p>El rol de <strong>Super Administrador</strong> solo está disponible en instalaciones de WordPress Multisitio. Permite gestionar todos los sitios dentro de una red de WordPress, incluyendo:</p>
+<ul>
+<li>Crear, eliminar y administrar sitios dentro de la red.</li>
+<li>Gestionar usuarios y permisos de toda la red.</li>
+<li>Instalar y activar temas y plugins para toda la red.</li>
+</ul>
+<blockquote>
+<p><strong>Nota</strong>: El Super Administrador tiene permisos sobre toda la red, por lo que debe asignarse con cautela.</p>
+</blockquote>
+<h2 id="modificacion-de-roles-y-capacidades">Modificación de roles y capacidades<a class="headerlink" href="#modificacion-de-roles-y-capacidades" title="Permanent link">&para;</a></h2>
+<p>WordPress permite <strong>modificar roles</strong> o <strong>crear roles personalizados</strong> mediante código o con plugins, como:</p>
+<ul>
+<li><strong>User Role Editor</strong>: permite modificar roles y capacidades de forma visual.</li>
+<li><strong>Members</strong>: facilita la creación de roles personalizados y define permisos específicos para cada rol.</li>
+</ul>
+<blockquote>
+<p><strong>Ejemplo</strong>: Puedes crear un rol de "Revisor" que solo pueda revisar y aprobar contenidos sin poder editarlos o eliminarlos.</p>
+</blockquote>
+<h2 id="como-asignar-un-rol-a-un-usuario">¿Cómo asignar un rol a un usuario?<a class="headerlink" href="#como-asignar-un-rol-a-un-usuario" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Accede al panel de WordPress y dirígete a <code>Usuarios &gt; Todos los usuarios</code>.</li>
+<li>Selecciona un usuario existente o haz clic en <code>Añadir nuevo</code> para crear uno.</li>
+<li>En el campo <strong>Rol</strong>, selecciona el rol que deseas asignar al usuario.</li>
+<li>Guarda los cambios.</li>
+</ol>
+<h2 id="consejos-de-seguridad-al-gestionar-roles">Consejos de seguridad al gestionar roles<a class="headerlink" href="#consejos-de-seguridad-al-gestionar-roles" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Asignar roles con cuidado</strong>: asigna el rol de Administrador solo a personas de confianza, ya que tienen control total sobre el sitio.</li>
+<li><strong>Usar roles personalizados para seguridad</strong>: puedes restringir ciertas capacidades si necesitas funciones específicas para algunos usuarios.</li>
+<li><strong>Monitorear permisos y accesos</strong>: especialmente en sitios con múltiples usuarios, revisa periódicamente los roles asignados para evitar problemas de seguridad.</li>
+</ol>
+<h2 id="tabla-de-roles-de-usuario-en-wordpress">Tabla de roles de usuario en WordPress<a class="headerlink" href="#tabla-de-roles-de-usuario-en-wordpress" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Rol</strong></th>
+<th><strong>Capacidades principales</strong></th>
+<th><strong>Ideal para</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Administrador</strong></td>
+<td>- Control total del sitio <br> - Gestionar plugins, temas, ajustes <br> - Añadir, editar y borrar usuarios, incluyendo admins</td>
+<td>Administradores del sitio</td>
+</tr>
+<tr>
+<td><strong>Editor</strong></td>
+<td>- Publicar, editar y eliminar cualquier contenido <br> - Moderar comentarios <br> - Gestionar categorías y etiquetas</td>
+<td>Supervisores de contenido</td>
+</tr>
+<tr>
+<td><strong>Autor</strong></td>
+<td>- Publicar, editar y eliminar su propio contenido <br> - Subir archivos multimedia</td>
+<td>Colaboradores independientes</td>
+</tr>
+<tr>
+<td><strong>Colaborador</strong></td>
+<td>- Escribir y editar sus propios borradores <br> - Enviar contenido para revisión</td>
+<td>Escritores que necesitan revisión</td>
+</tr>
+<tr>
+<td><strong>Suscriptor</strong></td>
+<td>- Acceder al perfil de usuario <br> - Comentar en entradas (si es necesario autenticación)</td>
+<td>Lectores o usuarios registrados</td>
+</tr>
+<tr>
+<td><strong>Super Admin</strong></td>
+<td>- Gestionar todos los sitios de la red Multisitio <br> - Crear y eliminar sitios <br> - Gestionar usuarios, temas y plugins</td>
+<td>Administrador de redes Multisitio</td>
+</tr>
+</tbody>
+</table>
+<!-- Resultados de Aprendizaje & Criterios de Evaluación -->
+<!-- Instrumentos de Evaluación -->
+<!-- Instrumentos de Calificación -->
+<!-- Tipo de actividades -->
+<!-- Otras abreviaciones -->
 
 
 

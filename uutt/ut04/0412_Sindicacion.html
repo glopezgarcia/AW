@@ -86,6 +86,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#sindicacion-en-wordpress" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1241,6 +1246,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4.12. Sindicación
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="0412_Sindicacion.html" class="md-nav__link md-nav__link--active">
         
@@ -1251,6 +1269,109 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-el-rss" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es el RSS?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Qué es el RSS?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beneficios-del-rss" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beneficios del RSS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona-la-sindicacion-en-wordpress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cómo funciona la sindicación en WordPress
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-activar-o-personalizar-la-sindicacion-en-wordpress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cómo activar o personalizar la sindicación en WordPress
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo activar o personalizar la sindicación en WordPress">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ajustes-de-sindicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ajustes de sindicación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usar-plugins-para-mejorar-la-sindicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usar plugins para mejorar la sindicación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-suscribirse-a-un-feed-rss" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cómo suscribirse a un feed RSS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#promocion-del-feed-rss" class="md-nav__link">
+    <span class="md-ellipsis">
+      Promoción del feed RSS
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1279,9 +1400,64 @@
                   
 
 
-  <h1>4.12. Sindicación</h1>
-
-
+<h1 id="sindicacion-en-wordpress">Sindicación en WordPress<a class="headerlink" href="#sindicacion-en-wordpress" title="Permanent link">&para;</a></h1>
+<p>La <strong>sindicación</strong> en WordPress se refiere a la distribución de contenido a través de varios canales, permitiendo que los usuarios reciban actualizaciones de un sitio web sin necesidad de visitarlo directamente. Esto se logra principalmente mediante el uso de <strong>feeds RSS</strong> (Really Simple Syndication).</p>
+<h2 id="que-es-el-rss">¿Qué es el RSS?<a class="headerlink" href="#que-es-el-rss" title="Permanent link">&para;</a></h2>
+<p>El <strong>RSS</strong> es un formato de archivo XML que permite a los sitios web sindicar contenido, como entradas de blog, noticias, o cualquier otro tipo de información. Los usuarios pueden suscribirse a estos feeds para recibir actualizaciones automáticamente en sus lectores de RSS.</p>
+<h3 id="beneficios-del-rss">Beneficios del RSS<a class="headerlink" href="#beneficios-del-rss" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Actualizaciones automáticas</strong>: Los usuarios reciben las últimas publicaciones sin necesidad de revisar manualmente el sitio.</li>
+<li><strong>Facilidad de uso</strong>: Los lectores de RSS permiten gestionar múltiples fuentes de información en un solo lugar.</li>
+<li><strong>Incremento del tráfico</strong>: Al ofrecer un feed RSS, puedes atraer más visitantes a tu sitio, ya que los usuarios están más propensos a visitar el sitio para leer el contenido completo.</li>
+</ul>
+<h2 id="como-funciona-la-sindicacion-en-wordpress">Cómo funciona la sindicación en WordPress<a class="headerlink" href="#como-funciona-la-sindicacion-en-wordpress" title="Permanent link">&para;</a></h2>
+<p>WordPress genera automáticamente un feed RSS para cada sitio. Este feed incluye las publicaciones, los comentarios, y en algunos casos, las categorías y etiquetas. La URL del feed RSS suele tener la siguiente estructura:</p>
+<ul>
+<li><strong>Feed de entradas</strong>: <code>https://www.tusitio.com/feed/</code></li>
+<li><strong>Feed de comentarios</strong>: <code>https://www.tusitio.com/comments/feed/</code></li>
+<li><strong>Feed de categorías</strong>: <code>https://www.tusitio.com/category/nombre-de-la-categoria/feed/</code></li>
+</ul>
+<p>Los lectores de RSS utilizan estas URL para recuperar contenido de forma regular.</p>
+<h2 id="como-activar-o-personalizar-la-sindicacion-en-wordpress">Cómo activar o personalizar la sindicación en WordPress<a class="headerlink" href="#como-activar-o-personalizar-la-sindicacion-en-wordpress" title="Permanent link">&para;</a></h2>
+<p>WordPress tiene la sindicación habilitada por defecto. Sin embargo, puedes personalizar cómo se muestra el contenido en el feed:</p>
+<h3 id="ajustes-de-sindicacion">Ajustes de sindicación<a class="headerlink" href="#ajustes-de-sindicacion" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Ve a <code>Ajustes &gt; Lectura</code> en el panel de administración de WordPress.</li>
+<li>
+<p>En la sección <strong>Sindicación de los feeds</strong>, puedes configurar:</p>
+<ul>
+<li><strong>Cantidad de entradas a mostrar en el feed</strong>.</li>
+<li><strong>Si mostrar texto completo o un resumen</strong>.</li>
+</ul>
+</li>
+</ol>
+<h3 id="usar-plugins-para-mejorar-la-sindicacion">Usar plugins para mejorar la sindicación<a class="headerlink" href="#usar-plugins-para-mejorar-la-sindicacion" title="Permanent link">&para;</a></h3>
+<p>Existen varios plugins que pueden ayudarte a mejorar la sindicación en WordPress. Algunos de los más populares son:</p>
+<ul>
+<li><strong>WP RSS Aggregator</strong>: permite agregar, importar y mostrar feeds RSS de otros sitios en tu propio sitio.</li>
+<li><strong>RSS Includes Pages</strong>: incluye las páginas en el feed RSS, no solo las entradas.</li>
+<li><strong>Featured Articles Lite</strong>: muestra un feed de artículos destacados en tu sitio.</li>
+</ul>
+<h2 id="como-suscribirse-a-un-feed-rss">Cómo suscribirse a un feed RSS<a class="headerlink" href="#como-suscribirse-a-un-feed-rss" title="Permanent link">&para;</a></h2>
+<p>Los usuarios pueden suscribirse a un feed RSS utilizando lectores de RSS como:</p>
+<ul>
+<li><strong>Feedly</strong></li>
+<li><strong>Inoreader</strong></li>
+<li><strong>The Old Reader</strong></li>
+</ul>
+<p>Algunos navegadores también ofrecen funcionalidades integradas para suscribirse a feeds RSS. Simplemente deben copiar la URL del feed y pegarla en su lector de RSS preferido.</p>
+<h2 id="promocion-del-feed-rss">Promoción del feed RSS<a class="headerlink" href="#promocion-del-feed-rss" title="Permanent link">&para;</a></h2>
+<p>Para maximizar el alcance de tu sindicación, considera las siguientes prácticas:</p>
+<ol>
+<li><strong>Agregar un enlace visible al feed RSS</strong>: Incluye un ícono o enlace en el menú de navegación o en el pie de página de tu sitio.</li>
+<li><strong>Usar botones para compartir en redes sociales</strong>: Facilita que los usuarios compartan tu contenido en sus redes sociales, lo que puede aumentar la visibilidad de tu feed RSS.</li>
+<li><strong>Incluir un formulario de suscripción</strong>: Permite que los usuarios se suscriban a tus actualizaciones por correo electrónico utilizando servicios como Mailchimp o FeedBurner.</li>
+</ol>
+<!-- Resultados de Aprendizaje & Criterios de Evaluación -->
+<!-- Instrumentos de Evaluación -->
+<!-- Instrumentos de Calificación -->
+<!-- Tipo de actividades -->
+<!-- Otras abreviaciones -->
 
 
 

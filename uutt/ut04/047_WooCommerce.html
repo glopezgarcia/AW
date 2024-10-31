@@ -88,6 +88,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#woocommerce" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1138,6 +1143,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4.7. WooCommerce
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="047_WooCommerce.html" class="md-nav__link md-nav__link--active">
         
@@ -1148,6 +1166,103 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-woocommerce" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es WooCommerce?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-configurar-woocommerce" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Cómo configurar WooCommerce?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Cómo configurar WooCommerce?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos previos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-del-plugin-woocommerce" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación del plugin WooCommerce
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracion-inicial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuración inicial
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anadir-productos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Añadir productos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personalizacion-de-la-tienda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personalización de la tienda
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opciones-avanzadas-y-analisis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Opciones avanzadas y análisis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1281,9 +1396,99 @@
                   
 
 
-  <h1>4.7. WooCommerce</h1>
-
-
+<h1 id="woocommerce">WooCommerce<a class="headerlink" href="#woocommerce" title="Permanent link">&para;</a></h1>
+<h2 id="que-es-woocommerce">¿Qué es WooCommerce?<a class="headerlink" href="#que-es-woocommerce" title="Permanent link">&para;</a></h2>
+<p><strong>WooCommerce</strong> es un plugin gratuito de WordPress que permite transformar un sitio web en una tienda en línea completamente funcional. Es ideal para pequeñas y medianas empresas que buscan vender productos físicos o digitales y es una de las herramientas de comercio electrónico más populares en el mundo, especialmente entre usuarios de WordPress. </p>
+<p>WooCommerce ofrece características avanzadas como:</p>
+<ul>
+<li>Gestión de inventario</li>
+<li>Opciones de pago (tarjetas de crédito, PayPal, Stripe, etc.)</li>
+<li>Configuración de envíos</li>
+<li>Herramientas de análisis y reportes</li>
+<li>Integración con otros plugins de marketing y SEO</li>
+</ul>
+<p>Además, permite personalización avanzada gracias a su compatibilidad con temas de WordPress y una amplia gama de extensiones.</p>
+<h2 id="como-configurar-woocommerce">¿Cómo configurar WooCommerce?<a class="headerlink" href="#como-configurar-woocommerce" title="Permanent link">&para;</a></h2>
+<h3 id="requisitos-previos">Requisitos previos<a class="headerlink" href="#requisitos-previos" title="Permanent link">&para;</a></h3>
+<p>Antes de instalar WooCommerce, asegúrate de cumplir con estos requisitos:</p>
+<ul>
+<li>Tener <strong>WordPress</strong> instalado y configurado.</li>
+<li>Contar con un <strong>tema compatible</strong> con WooCommerce (como Storefront o Astra).</li>
+<li>Tener acceso al panel de administración de WordPress.</li>
+</ul>
+<h3 id="instalacion-del-plugin-woocommerce">Instalación del plugin WooCommerce<a class="headerlink" href="#instalacion-del-plugin-woocommerce" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Accede a tu panel de administración de WordPress.</li>
+<li>Dirígete a <code>Plugins &gt; Añadir nuevo</code>.</li>
+<li>En la barra de búsqueda, escribe "WooCommerce" y selecciona el plugin.</li>
+<li>Haz clic en <code>Instalar ahora</code> y luego en <code>Activar</code>.</li>
+</ol>
+<h3 id="configuracion-inicial">Configuración inicial<a class="headerlink" href="#configuracion-inicial" title="Permanent link">&para;</a></h3>
+<p>Después de activar WooCommerce, el plugin te guiará por una serie de pasos para configurarlo de manera básica:</p>
+<ol>
+<li><strong>Asistente de configuración</strong>: WooCommerce lanzará un asistente que te ayuda a definir la información básica de la tienda:</li>
+</ol>
+<ul>
+<li><strong>Dirección de la tienda</strong>: ubicación física desde la que operas (para calcular impuestos y envíos).</li>
+<li><strong>Moneda</strong>: selecciona la moneda en la que venderás tus productos.</li>
+<li><strong>Tipo de producto</strong>: define si venderás productos físicos, digitales o ambos.</li>
+</ul>
+<ol start="2">
+<li><strong>Opciones de pago</strong>: selecciona los métodos de pago que deseas ofrecer. WooCommerce soporta métodos como:</li>
+</ol>
+<ul>
+<li><strong>PayPal</strong> y <strong>Stripe</strong> (tarjeta de crédito).</li>
+<li><strong>Transferencia bancaria</strong> y <strong>contra reembolso</strong>.</li>
+<li><strong>Otros métodos de pago locales</strong> (según tu país).</li>
+</ul>
+<ol start="3">
+<li><strong>Opciones de envío</strong>: aquí defines zonas de envío y tarifas. Puedes configurar:</li>
+</ol>
+<ul>
+<li><strong>Zonas de envío</strong>: áreas geográficas donde realizas envíos.</li>
+<li><strong>Métodos de envío</strong>: define si ofrecerás envío gratuito, tarifa fija o envío calculado.</li>
+</ul>
+<ol start="4">
+<li><strong>Configuración de impuestos</strong> (opcional): WooCommerce permite la gestión de impuestos. Puedes elegir:</li>
+</ol>
+<ul>
+<li>Activar o desactivar los impuestos.</li>
+<li>Configurar el tipo de impuesto según ubicación del cliente y normas fiscales locales.</li>
+</ul>
+<h3 id="anadir-productos">Añadir productos<a class="headerlink" href="#anadir-productos" title="Permanent link">&para;</a></h3>
+<p>Una vez completada la configuración básica, puedes añadir productos a tu tienda:</p>
+<ol>
+<li>En el panel de WordPress, ve a <code>Productos &gt; Añadir nuevo</code>.</li>
+<li>Completa los campos de producto:</li>
+</ol>
+<ul>
+<li><strong>Nombre</strong> y <strong>descripción</strong> del producto.</li>
+<li><strong>Precio</strong> y, opcionalmente, <strong>precio de oferta</strong>.</li>
+<li><strong>Inventario</strong>: permite gestionar la cantidad de stock disponible.</li>
+<li><strong>Envío</strong>: especifica el peso y dimensiones del producto (si es un producto físico).</li>
+<li><strong>Atributos y variaciones</strong>: si el producto tiene opciones (como tallas o colores).</li>
+</ul>
+<ol start="3">
+<li>Publica el producto para que aparezca en tu tienda en línea.</li>
+</ol>
+<h3 id="personalizacion-de-la-tienda">Personalización de la tienda<a class="headerlink" href="#personalizacion-de-la-tienda" title="Permanent link">&para;</a></h3>
+<p>Puedes personalizar la apariencia de tu tienda para que se ajuste a tu marca:</p>
+<ul>
+<li><strong>Personalizador de WordPress</strong> (<code>Apariencia &gt; Personalizar</code>): permite cambiar los colores, fuentes, y otros elementos visuales de tu tienda.</li>
+<li><strong>Widgets y menús</strong>: WooCommerce añade widgets para mostrar productos, categorías, filtros, entre otros, que puedes añadir en las barras laterales o en el pie de página.</li>
+<li><strong>Plugins de personalización</strong>: existen plugins de terceros para crear opciones de diseño avanzadas y elementos visuales como carruseles de productos, pop-ups, etc.</li>
+</ul>
+<h3 id="opciones-avanzadas-y-analisis">Opciones avanzadas y análisis<a class="headerlink" href="#opciones-avanzadas-y-analisis" title="Permanent link">&para;</a></h3>
+<p>WooCommerce incluye herramientas avanzadas para gestionar y analizar tu tienda:</p>
+<ul>
+<li><strong>Informes y estadísticas</strong>: desde el panel de WooCommerce, puedes ver datos sobre ventas, ingresos, productos populares, y más.</li>
+<li><strong>Extensiones de marketing</strong>: existen múltiples plugins para SEO, email marketing, y recuperación de carritos abandonados.</li>
+</ul>
+<!-- Resultados de Aprendizaje & Criterios de Evaluación -->
+<!-- Instrumentos de Evaluación -->
+<!-- Instrumentos de Calificación -->
+<!-- Tipo de actividades -->
+<!-- Otras abreviaciones -->
 
 
 

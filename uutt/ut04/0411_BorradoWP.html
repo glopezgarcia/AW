@@ -88,6 +88,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#borrado-de-sitios-realizados-con-wordpress" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1222,6 +1227,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4.11. Borrado
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="0411_BorradoWP.html" class="md-nav__link md-nav__link--active">
         
@@ -1232,6 +1250,103 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#borrar-un-sitio-en-wordpresscom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Borrar un sitio en WordPress.com
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#borrar-un-sitio-en-wordpressorg-alojamiento-propio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Borrar un sitio en WordPress.org (alojamiento propio)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Borrar un sitio en WordPress.org (alojamiento propio)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eliminar-archivos-del-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eliminar archivos del sitio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminar-la-base-de-datos-del-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eliminar la base de datos del sitio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminar-el-sitio-en-el-panel-de-hosting-opcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eliminar el sitio en el panel de hosting (opcional)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#borrar-una-instalacion-de-wordpress-en-un-entorno-de-prueba-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      Borrar una instalación de WordPress en un entorno de prueba local
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recomendaciones-y-precauciones-antes-de-borrar-un-sitio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recomendaciones y precauciones antes de borrar un sitio
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-de-metodos-para-borrar-un-sitio-en-wordpress" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumen de métodos para borrar un sitio en WordPress
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1281,9 +1396,115 @@
                   
 
 
-  <h1>4.11. Borrado</h1>
-
-
+<h1 id="borrado-de-sitios-realizados-con-wordpress">Borrado de sitios realizados con WordPress<a class="headerlink" href="#borrado-de-sitios-realizados-con-wordpress" title="Permanent link">&para;</a></h1>
+<p>Eliminar un sitio en WordPress puede ser útil en casos como limpiezas, migraciones, o si el sitio ya no se necesita. Dependiendo de si el sitio está alojado en WordPress.com o en un servidor propio (WordPress.org), los pasos varían.</p>
+<h2 id="borrar-un-sitio-en-wordpresscom">Borrar un sitio en WordPress.com<a class="headerlink" href="#borrar-un-sitio-en-wordpresscom" title="Permanent link">&para;</a></h2>
+<p>En WordPress.com, los sitios se alojan en los servidores de WordPress, por lo que el proceso es sencillo.</p>
+<ol>
+<li>Inicia sesión en tu cuenta de WordPress.com y accede al sitio que deseas borrar.</li>
+<li>En el menú lateral, ve a <code>Ajustes &gt; General</code>.</li>
+<li>Desplázate hasta la opción <code>Borrar tu sitio permanentemente</code>.</li>
+<li>WordPress.com te ofrecerá primero una opción para <strong>exportar el contenido</strong> antes de eliminar el sitio (recomendado en caso de necesitar una copia).</li>
+<li>Selecciona <code>Borrar sitio</code> y confirma la eliminación.</li>
+</ol>
+<div class="admonition danger">
+<p class="admonition-title">A tener en cuenta</p>
+<p>Este proceso es irreversible. Una vez borrado, el contenido y la URL del sitio no se podrán recuperar.</p>
+</div>
+<h2 id="borrar-un-sitio-en-wordpressorg-alojamiento-propio">Borrar un sitio en WordPress.org (alojamiento propio)<a class="headerlink" href="#borrar-un-sitio-en-wordpressorg-alojamiento-propio" title="Permanent link">&para;</a></h2>
+<p>Si tienes un sitio en WordPress.org alojado en tu propio servidor o en un servicio de hosting, el proceso implica eliminar los archivos y la base de datos del sitio.</p>
+<h3 id="eliminar-archivos-del-sitio">Eliminar archivos del sitio<a class="headerlink" href="#eliminar-archivos-del-sitio" title="Permanent link">&para;</a></h3>
+<p>Para borrar los archivos de WordPress en el servidor, puedes usar un cliente FTP o el Administrador de archivos del proveedor de hosting.</p>
+<ol>
+<li>Conéctate al servidor a través de FTP (FileZilla, por ejemplo) o accede al Administrador de archivos en el panel de hosting.</li>
+<li>Ubica el directorio de WordPress (generalmente <code>public_html</code> o un subdirectorio).</li>
+<li>Selecciona todos los archivos y carpetas del sitio y bórralos.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">A tener en cuenta</p>
+<p>Si tienes múltiples sitios en el servidor, asegúrate de eliminar solo la carpeta correspondiente al sitio específico que deseas borrar.</p>
+</div>
+<h3 id="eliminar-la-base-de-datos-del-sitio">Eliminar la base de datos del sitio<a class="headerlink" href="#eliminar-la-base-de-datos-del-sitio" title="Permanent link">&para;</a></h3>
+<p>Eliminar la base de datos es crucial para borrar completamente el contenido del sitio.</p>
+<ol>
+<li>Accede a phpMyAdmin o la herramienta de gestión de bases de datos de tu hosting.</li>
+<li>Selecciona la base de datos asociada al sitio de WordPress que deseas eliminar.</li>
+<li>Haz clic en <code>Eliminar base de datos</code> o elimina todas las tablas dentro de la base de datos.</li>
+</ol>
+<div class="admonition danger">
+<p class="admonition-title">Precaución</p>
+<p>Al eliminar la base de datos, perderás permanentemente todos los datos del sitio, como entradas, comentarios, usuarios y configuraciones.</p>
+</div>
+<h3 id="eliminar-el-sitio-en-el-panel-de-hosting-opcional">Eliminar el sitio en el panel de hosting (opcional)<a class="headerlink" href="#eliminar-el-sitio-en-el-panel-de-hosting-opcional" title="Permanent link">&para;</a></h3>
+<p>Algunos proveedores de hosting permiten borrar el sitio directamente desde su panel de administración.</p>
+<ol>
+<li>Accede al panel de control del hosting (como cPanel o Plesk).</li>
+<li>Busca la opción de <code>Administración de sitios</code> o <code>Sitios Web</code>.</li>
+<li>Selecciona el sitio que deseas borrar y sigue las instrucciones para eliminarlo.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">A tener en cuenta</p>
+<p>Este método puede eliminar tanto los archivos como la base de datos en un solo paso, según el hosting.</p>
+</div>
+<h2 id="borrar-una-instalacion-de-wordpress-en-un-entorno-de-prueba-local">Borrar una instalación de WordPress en un entorno de prueba local<a class="headerlink" href="#borrar-una-instalacion-de-wordpress-en-un-entorno-de-prueba-local" title="Permanent link">&para;</a></h2>
+<p>Si tienes una instalación de WordPress en local (por ejemplo, con herramientas como <strong>Local by Flywheel</strong>, <strong>XAMPP</strong>, o <strong>MAMP</strong>), puedes eliminarla de la siguiente manera:</p>
+<ol>
+<li>Accede a la carpeta donde están almacenados los archivos del sitio (por ejemplo, en <code>htdocs</code> para XAMPP).</li>
+<li>Borra la carpeta del sitio de WordPress.</li>
+<li>Abre phpMyAdmin o la herramienta de base de datos local y elimina la base de datos asociada al sitio.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">A tener en cuenta</p>
+<p>Este proceso solo elimina la instalación local y no afecta a sitios en internet.</p>
+</div>
+<h2 id="recomendaciones-y-precauciones-antes-de-borrar-un-sitio">Recomendaciones y precauciones antes de borrar un sitio<a class="headerlink" href="#recomendaciones-y-precauciones-antes-de-borrar-un-sitio" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Realizar una copia de seguridad</strong>: antes de borrar cualquier sitio, asegúrate de realizar una copia de seguridad completa de los archivos y la base de datos. Esto es especialmente importante si crees que podrías necesitar el contenido en el futuro.</li>
+<li><strong>Exportar el contenido</strong>: en caso de que solo quieras eliminar WordPress y no el contenido, exporta el contenido desde <code>Herramientas &gt; Exportar</code> en el panel de WordPress.</li>
+<li><strong>Revisar otros datos asociados</strong>: si tienes servicios adicionales asociados, como emails o subdominios, verifica que no se vean afectados por la eliminación.</li>
+</ol>
+<h2 id="resumen-de-metodos-para-borrar-un-sitio-en-wordpress">Resumen de métodos para borrar un sitio en WordPress<a class="headerlink" href="#resumen-de-metodos-para-borrar-un-sitio-en-wordpress" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Requisitos</th>
+<th>Contenido eliminado</th>
+<th>Complejidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Borrar en WordPress.com</td>
+<td>Acceso a WordPress.com</td>
+<td>Contenido y URL de WordPress.com</td>
+<td>Fácil</td>
+</tr>
+<tr>
+<td>Borrar archivos y base de datos (WordPress.org)</td>
+<td>Acceso a FTP y phpMyAdmin</td>
+<td>Archivos y base de datos del sitio</td>
+<td>Moderada</td>
+</tr>
+<tr>
+<td>Eliminar sitio en panel de hosting</td>
+<td>Acceso a cPanel, Plesk u otro panel</td>
+<td>Archivos, base de datos y configuración del hosting</td>
+<td>Fácil/Automática</td>
+</tr>
+<tr>
+<td>Borrar instalación local</td>
+<td>Acceso a archivos locales y phpMyAdmin local</td>
+<td>Archivos y base de datos locales</td>
+<td>Fácil</td>
+</tr>
+</tbody>
+</table>
+<!-- Resultados de Aprendizaje & Criterios de Evaluación -->
+<!-- Instrumentos de Evaluación -->
+<!-- Instrumentos de Calificación -->
+<!-- Tipo de actividades -->
+<!-- Otras abreviaciones -->
 
 
 
